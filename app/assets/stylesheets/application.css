@@ -1,18 +1,67 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 h1{
-	color: red;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h2{
+	color: orange;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.container {
+	text-align: center;
+}
+
+.article {
+	color: white;
+	text-align: left;
+
+}
+
+.smiley {
+	align-items: right; 
+}
+
+.rep {
+	background-size: cover;
+	background-position: center;
+}
+
+.wrapper {
+	background-size: cover;
+	background-position: center;
+	opacity: 45%;
+}
+
+.wall {
+	background-size: cover;
+	background-position: cover;
+}
+
+.pop {
+	background-size: cover;
+	background-position: cover;
+	opacity: 45%;
+}
+
+.genie {
+	align-items: center;
+}
+
+.ask {
+	align-items: left;
+}
+
+.edition {
+	background-size: cover;
+	background-position: center;
+	opacity: 45%;
+	display: flex;
+}
+p{
+	font-family: arial, comic sans MS, verdana, sans-serif;
+	color: black;
 }

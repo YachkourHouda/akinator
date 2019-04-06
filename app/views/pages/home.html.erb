@@ -1,15 +1,24 @@
+<div class="wrapper" style="background-image: url('https://lemag.nikonclub.fr/wp-content/uploads/2017/07/08.jpg');">
+
 <h1>Akinator</h1>
-<p>Challenge me to see if I can find who you think.</p>
 
+<div class="container">
+	<div class="row">
+		<div class="text-center">
+			<div class="ask">
+				<p>Challenge me to see if I can find who you think.</p>
 
-<% date_today = Time.now.strftime("%d/%m/%y") %>
-
-<% if true %>
-<% date_today %>
-<% end %> 
 
 <%= link_to( "Mon blog", pages_blog_path, method: :get ) %>
 
 <p>Pense à quelqu'un</p>
 
 <%= link_to( "Commencer à jouer", games_path, method: :post, class: "btn btn-warning" ) %>
+</div>
+</div>
+<div class="col-md-6">
+	<img src="https://static.giantbomb.com/uploads/scale_small/39/392987/3055687-5374013480-akina.png" alt="", class="genie">
+</div>
+</div>
+</div>
+</div>

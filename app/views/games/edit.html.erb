@@ -1,6 +1,17 @@
-<h1>Games#edit</h1>
-<p>Find me in app/views/games/edit.html.erb</p>
+<div class="wall" style="background-image: url('https://www.aquaportail.com/pictures1709/desert-sahara.jpg') ;">
 
-<p>Question 1</p>
-<%= link_to( "Oui", game_path(1), method: :put, class: "btn btn-warning" ) %>
-<%= link_to( "Non", game_path(1), method: :put, class: "btn btn-warning" ) %>
+<h1>Questions</h1>
+
+<div class="container">
+	<div class="row">
+		<div class="text-center">
+<p>Question ?</p>
+<div class="ask">
+	</div>
+</div>
+</div>
+</div>
+
+
+<%= link_to( "Editer le jeu", edit_game_path, method: :get, class: "btn btn-warning" ) %>
+<%= link_to( "Mise à jour du jeu", game_path, method: :patch, class: "btn btn-warning" ) %>
