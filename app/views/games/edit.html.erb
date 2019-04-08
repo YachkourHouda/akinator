@@ -1,7 +1,7 @@
 <div class="wall" style="background-image: url('https://www.aquaportail.com/pictures1709/desert-sahara.jpg') ;">
 
 <h1>Questions</h1>
-<h1><%= @question %></h1>
+
 
 
 
@@ -18,5 +18,9 @@
 
 <%= link_to( "Editer le jeu", edit_game_path(1), method: :get, class: "btn btn-warning" ) %>
 <%= link_to( "Mise à jour du jeu", game_path, method: :patch, class: "btn btn-warning" ) %>
-<%= link_to "Yes", game_path(id: 1), method: :patch %>
-<%= link_to "No", game_path(id: 1), method: :patch %>
+
+<div class="wall" style="empty-cells: unset;">
+	<h1><%= @question %></h1>
+
+<%= link_to "Yes", game_path(id: 1, question_id: @question_id + 1, answer: "yes"), method: :patch %>
+<%= link_to "No", game_path(id: 1, question_id: @question_id + 1, answer: "no"), method: :patch %>
